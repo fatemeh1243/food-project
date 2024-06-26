@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    input[type=submit] {
+        width: 30%;
+        background-color: #6D2932;
+        color:#E7CbCB;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        place-content: center;
+        top: 50%;
+        left: 36%;
+        text-align: center;
+        position: relative;
+      }
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=submit]:hover {
+        background-color: #561C24;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      background-color: #E8DFCA;
+    }
+    body {
+        background-color: #E8DFCA;
+      }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <form method='POST'>
+        {% csrf_token %}
+        {{form}}
+        <br>
+        <br>
+        <input type="submit" value='add' class="my-button">
+    </form>
+</div>
+</body> 
+
+</html>

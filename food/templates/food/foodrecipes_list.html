@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #E8DFCA;
+            }
+            h1 {
+              font-size: 36px;
+              color: #333;
+            }
+            button{
+                width: 30%;
+                background-color: #6D2932;
+                color:#E7CbCB;
+                padding: 10px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+                font-size: 18px;
+                place-content: center;
+                top: 50%;
+                left: 36%;
+                text-align: center;
+                position: relative;
+              }
+              button:hover{
+                background-color: #561C24;
+              }
+    </style>
+</head>
+<body>
+    <div style="width: 600px; margin: 0 auto;">
+        
+        <ul>
+    
+            {% for food in object_list %}
+           <h1> <li>{{food.name}}</li></h1>
+            {% endfor %}
+        </ul>
+        <a href="add/"><button>add recipes</button></a>
+    </div>
+
+</body>
+</html>

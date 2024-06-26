@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <style>
+        body{
+            background-color: #E8DFCA;
+        }
+        h1{
+            color: #1A4D2E;
+        }
+        h2{
+            color: #1A4D2E;
+        }
+    </style>
+</head>
+<body>
+    
+    <div style="width: 400px; margin: 0 auto;">
+        <h1>you can make these foods</h1>
+        <h2>
+
+            <ul>
+                {% for food in suggested_food %}
+                    <li>{{food|title}} </li>
+                {% endfor %}
+            </ul>
+        </h2>
+
+    </div>
+</body>
+</html>
